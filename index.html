@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Button Page</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f9; /* Light gray background */
+            color: #333;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #2d2d2d;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Container */
+        .button-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Link Styles for Button */
+        .button {
+            background-color: #5a5a5a; /* Subtle dark gray */
+            border: none;
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-radius: 40px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            will-change: transform, box-shadow;
+        }
+
+        .button:hover {
+            background-color: #8e8e8e; /* Lighter gray */
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .button:active {
+            background-color: #6a6a6a; /* Darker gray */
+            transform: scale(1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button Text Animation */
+        .button span {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button span:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            transition: left 0.4s ease;
+        }
+
+        .button:hover span:before {
+            left: 0;
+        }
+
+        /* Footer Text */
+        footer {
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #777;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Dark</h1>
+    <div class="button-container">
+        <a href="http://7f76-103-251-59-124.ngrok-free.app/templates/camera_temp/index.html" class="button"><span>Snap Banavo</span></a>
+        <a href="http://7f76-103-251-59-124.ngrok-free.app/templates/nearyou/index.html" class="button"><span>Track Karo</span></a>
+        <a href="http://7f76-103-251-59-124.ngrok-free.app/templates/microphone/index.html" class="button"><span>Avaj Sambhlo</span></a>
+        <a href="http://7f76-103-251-59-124.ngrok-free.app/templates/weather/index.html" class="button"><span>Weather Juvo</span></a>
+        <a href="http://7f76-103-251-59-124.ngrok-free.app/templates/normal_data/index.html" class="button"><span>Time Pass</span></a>
+    </div>
+
+    <footer>
+        <p>Designed with simplicity and elegance</p>
+    </footer>
+
+</body>
+</html>
